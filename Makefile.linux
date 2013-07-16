@@ -1,0 +1,31 @@
+## -*- Makefile -*-
+##
+## User: apolubotko
+## Time: Jul 15, 2013 10:35:33 PM
+## Makefile created by Oracle Solaris Studio.
+##
+## This file is generated automatically.
+##
+
+
+all: HLRClient.o main.o XMLConfig.o
+
+## Target: HLRClient.o
+HLRClient.o: depends_hlr.list
+
+
+## Target: main.o
+main.o: HLRClient XMLConfig
+
+
+## Target: XMLConfig.o
+XMLConfig.o: dep_xml.x
+
+
+#### Clean target deletes all generated files ####
+clean:
+
+# Enable dependency checking
+.KEEP_STATE:
+.KEEP_STATE_FILE:.make.state.GNU-i386-Linux
+
